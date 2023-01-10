@@ -1,0 +1,48 @@
+CREATE TABLE fellowship_candidates (
+id int Primary key NOT NULL,
+first_name varchar(100) NOT NULL,
+middle_name varchar(100) NOT NULL,
+last_name varchar(100) NOT NULL,
+email varchar(50) NOT NULL,
+mobile_num bigint NOT NULL,
+hired_city varchar(50) NOT NULL,
+hired_date date NOT NULL,
+degree varchar(50) NOT NULL,
+aggr_per DOUBLE PRECISION NOT NULL,
+current_pincode int NOT NULL,
+permanent_pincode int NOT NULL,
+hired_lab varchar(20) NOT NULL,
+attitude_remark varchar(15) NOT NULL,
+communication_remark varchar(15) NOT NULL,
+knowledge_remark varchar(15) NOT NULL,
+birth_date date NOT NULL,
+is_birth_date_verified date NOT Null,
+parent_name varchar(50) NOT NULL,
+parent_occupation varchar(100) NOT NULL,
+parent_mobile_num bigint NOT NULL,
+parent_annual_sal  DOUBLE PRECISION NOT NULL,
+local_addr varchar(255) NOT NULL,
+permanent_addr varchar(150) NOT NULL,
+photo_path varchar(500) NOT NULL,
+joining_date date NOT NULL,
+candidate_status varchar(20) NOT NULL,
+personal_info_filled int NOT NULL,
+bank_info_filled int NOT NULL,
+educational_info_filled int NOT NULL,
+doc_status varchar(20) NOT NULL,
+remark varchar(150) NOT NULL,
+creator_stamp date NOT NULL,
+creator_user int NOT NULL,
+) 
+
+insert into fellowship_candidates values(1,'deepak','Kiran','Patil','deepak63584@gmail.com ',
+8956748596,'Pune','2019-12-13','B.E' , 567525,5245,5478,'Mumbai','Good','Good','Good','1999-12-13', 
+'1999-12-13','Kiran','Farmer' ,7584962547,300000, 'Pune','Pune' ,'photo_path','2019-12-13','Good',
+1, 1, 1, 'Correct', 'Good','2020-11-02',1);
+
+insert into fellowship_candidates values( 2,'Ramchandra','Popat','Mulik','mulikram2016@gmail.com',8985745896,'Mumbai','2022-10-12','BE',84.25,
+415322,415311,'Mumbai','Nice','Nice','Nice','1998-08-28','1998-08-28','Popat','Farmer',8596987458,300000,'Mumbai','Revangoan','photo','2023-02-13',
+'Nice',0,
+0,0,'OK' ,'Nice','2023-03-14',1);
+
+Select * from fellowship_candidates

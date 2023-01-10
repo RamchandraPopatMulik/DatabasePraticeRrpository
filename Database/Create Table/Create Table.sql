@@ -1,0 +1,46 @@
+CREATE TABLE hired_candidates (
+id int Primary key NOT NULL,
+first_name varchar(100) NOT NULL,
+middle_name varchar(100) NOT NULL,
+last_name varchar(100) NOT NULL,
+email varchar(50) NOT NULL,
+mobile_num bigint NOT NULL,
+hired_city varchar(50) NOT NULL,
+hired_date datetime NOT NULL,
+degree varchar(100) NOT NULL,
+aggr_per DOUBLE PRECISION NOT NULL,
+current_pincode int NOT NULL,
+permanent_pincode int NOT NULL,
+hired_lab varchar(200) NOT NULL,
+attitude_remark varchar(15) NOT NULL,
+communication_remark varchar(15) NOT NULL,
+knowledge_remark varchar(15) NOT NULL,
+status varchar(20) NOT NULL,
+creator_stamp datetime NOT NULL,
+creator_user int NOT NULL,
+) 
+
+CREATE TABLE hired_candidates (
+id int Check(id <=9999999999) NOT NULL,
+first_name varchar(100) NOT NULL,
+middle_name varchar(100) ,
+last_name varchar(100) NOT NULL,
+email varchar(50) NOT NULL,
+mobile_num bigint Check(mobile_num <=999995655555659) NOT NULL,
+hired_city varchar(50) NOT NULL,
+hired_date datetime NOT NULL,
+degree varchar(100) NOT NULL,
+aggr_per DOUBLE PRECISION,
+current_pincode int Check(current_pincode <=9999999999) ,
+permanent_pincode int Check(permanent_pincode <=9999999999),
+hired_lab varchar(20) ,
+attitude_remark varchar(15) ,
+communication_remark varchar(15) ,
+knowledge_remark varchar(15),
+status varchar(20) NOT NULL,
+creator_stamp datetime ,
+creator_user int Check(creator_user <=9999999999) ,
+PRIMARY KEY (id)
+) ENGINE=InnoDb DEFAULT CHARSET=utf8 AUTO_INCREMENT=65;
+
+
