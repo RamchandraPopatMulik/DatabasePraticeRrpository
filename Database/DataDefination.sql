@@ -65,3 +65,94 @@ Id int
 Drop Table if exists Santosh
 
 Truncate table Santosh	
+
+SELECT Name FROM Student  
+ORDER BY RAND ( )  
+ 
+ --Random
+SELECT TOP 5 Name from Student
+ORDER BY Id  
+
+SELECT *   
+FROM Student s  
+INNER JOIN Student1 s1 
+ON s.Id= s1.Id  
+
+Alter Table Student Add Salary int 
+
+Insert into Student Values('Vinod',211,'BE','M',96043406,'Renavi',56565656) ,('Pramod',212,'BE','M',96043406,'Renavi',56565656),('Lalya',213,'BE','M',96043406,'Renavi',56565656)
+
+Select * from Student
+
+---- SUM -----
+SELECT SUM(Salary) AS "Total Salary"  
+FROM Student 
+WHERE Salary > 20000;  
+
+SELECT SUM (DISTINCT Salary) AS "Total Salary"  
+FROM Student 
+WHERE Salary > 20000;  
+
+---Count Condition
+SELECT COUNT(*)  
+FROM Student Where RollNo >=110;  
+
+----Count
+SELECT COUNT(*)  
+FROM Student1;  
+
+---Count with Distinct
+SELECT COUNT(DISTINCT Name)  
+FROM Student;  
+
+---Sum
+SELECT SUM(Salary)  
+FROM Student; 
+
+Select * from Student
+---Sum With Condition  
+
+SELECT SUM(Salary)  
+FROM Student  
+WHERE Salary> 23000;
+ 
+---Group 
+SELECT SUM(Salary)  
+FROM Student  
+WHERE Salary>3  
+GROUP BY Id;  
+
+----Having
+SELECT Id, SUM(Salary)  
+FROM Student 
+GROUP BY Id  
+HAVING SUM(Salary)>=17000; 
+----Avg
+SELECT AVG(Salary)  
+FROM Student;
+---Max
+SELECT MAX(Salary)  
+FROM Student;  
+---MIN
+SELECT MIN(Salary)  
+FROM Student; 
+
+
+
+SELECT Id, COUNT(*)  
+FROM Student   
+GROUP BY Id; 
+
+SELECT Id, COUNT(*)  
+FROM Student   
+GROUP BY Id  
+HAVING COUNT(*)>2;  
+
+
+SELECT *  
+FROM Student  
+ORDER BY NAME; 
+
+SELECT *  
+FROM Student  
+ORDER BY NAME DESC; 
