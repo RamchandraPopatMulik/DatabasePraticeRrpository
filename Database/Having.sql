@@ -1,0 +1,4 @@
+SELECT  RollNo 
+FROM Student
+GROUP BY RollNo
+HAVING COUNT(RollNo) >= 102;

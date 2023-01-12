@@ -1,0 +1,21 @@
+---Create Views
+
+CREATE VIEW CUSTOMERS_VIEW AS
+SELECT Name, RollNo
+FROM  Student;
+
+SELECT * FROM CUSTOMERS_VIEW;
+
+----Update View
+UPDATE CUSTOMERS_VIEW
+   SET RollNo = 35
+   WHERE name = 'Ramchandra';
+
+
+----Delete View
+DELETE FROM CUSTOMERS_VIEW
+   WHERE RollNo = 213;
+
+---Drop View
+
+DROP VIEW CUSTOMERS_VIEW;

@@ -20,7 +20,7 @@ creator_stamp datetime NOT NULL,
 creator_user int NOT NULL,
 ) 
 
-CREATE TABLE hired_candidates (
+CREATE TABLE hired_candidatesabc (
 id int Check(id <=9999999999) NOT NULL,
 first_name varchar(100) NOT NULL,
 middle_name varchar(100) ,
@@ -41,6 +41,6 @@ status varchar(20) NOT NULL,
 creator_stamp datetime ,
 creator_user int Check(creator_user <=9999999999) ,
 PRIMARY KEY (id)
-) ENGINE=InnoDb DEFAULT CHARSET=utf8 AUTO_INCREMENT=65;
+)ENGINE = DESKTOP-ICFRQNG DEFAULT CHARSET=utf8;
 
 
