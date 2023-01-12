@@ -41,6 +41,6 @@ status varchar(20) NOT NULL,
 creator_stamp datetime ,
 creator_user int Check(creator_user <=9999999999) ,
 PRIMARY KEY (id)
-)ENGINE = DESKTOP-ICFRQNG DEFAULT CHARSET=utf8;
+)SERVER = DESKTOP-ICFRQNG DEFAULT CHARSET=utf8;
 
 
